@@ -1,2 +1,2 @@
 # juego_de_la-bolsa
-vamos a hacer una cosa genial
+juego para la materia de simulación
