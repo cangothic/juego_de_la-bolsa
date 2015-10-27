@@ -1,65 +1,65 @@
-__author__ = 'rocka'
-# -*- coding: utf-8 -*-
+__author__ = 'rocka                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+# -*- coding: utf-8 -* -
 import random
 import sys
 import pygame
-from pygame.locals import *
+from pygame.locals import  *
+from command.controlador import *
 
+class Opcion :
 
-class Opcion:
-
-    def __init__(self, fuente, titulo, x, y, paridad, funcion_asignada):
-        self.imagen_normal = fuente.render(titulo, 1, (0, 0, 0))
-        self.imagen_destacada = fuente.render(titulo, 1, (200, 0, 0))
+    def __init__(self, fuente, titulo, x, y, paridad, funcion_asignada) :
+        self.imagen_normal = fuente.render(titulo, 1, (0, 0, 0) )
+        self.imagen_destacada = fuente.render(titulo, 1, (200, 0, 0) )
         self.image = self.imagen_normal
-        self.rect = self.image.get_rect()
+        self.rect = self.image.get_rect( )
         self.rect.x = 500 * paridad
-        self.rect.y = y
+        self.rect.y =  y
         self.funcion_asignada = funcion_asignada
-        self.x = float(self.rect.x)
+        self.x = float(self.rect.x )
 
-    def actualizar(self):
+    def actualizar(self) :
         destino_x = 105
         self.x += (destino_x - self.x) / 5.0
-        self.rect.x = int(self.x)
+        self.rect.x = int(self.x )
 
-    def imprimir(self, screen):
-        screen.blit(self.image, self.rect)
+    def imprimir(self, screen) :
+        screen.blit(self.image, self.rect )
 
-    def destacar(self, estado):
-        if estado:
+    def destacar(self, estado) :
+        if estado :
             self.image = self.imagen_destacada
-        else:
+        else :
             self.image = self.imagen_normal
 
-    def activar(self):
-        self.funcion_asignada()
+    def activar(self) :
+        self.funcion_asignada( )
 
 
-class Cursor:
+class Cursor :
 
-    def __init__(self, x, y, dy):
-        self.image = pygame.image.load('imagenes/cursor.png').convert_alpha()
-        self.rect = self.image.get_rect()
-        self.rect.x = x
-        self.y_inicial = y
+    def __init__(self, x, y, dy) :
+        self.image = pygame.image.load('imagenes/cursor.png').convert_alpha( )
+        self.rect = self.image.get_rect( )
+        self.rect.x =  x
+        self.y_inicial =  y
         self.dy = dy
-        self.y = 0
-        self.seleccionar(0)
+        self.y =  0
+        self.seleccionar(0 )
 
-    def actualizar(self):
+    def actualizar(self) :
         self.y += (self.to_y - self.y) / 10.0
-        self.rect.y = int(self.y)
+        self.rect.y = int(self.y )
 
-    def seleccionar(self, indice):
+    def seleccionar(self, indice) :
         self.to_y = self.y_inicial + indice * self.dy
 
-    def imprimir(self, screen):
-        screen.blit(self.image, self.rect)
+    def imprimir(self, screen) :
+        screen.blit(self.image, self.rect )
 
 
-class Menu:
-    "Representa un menú con opciones para un juego"
+class Menu :
+    "Representa un menú con opciones para un juego "
 
     def __init__(self, opciones):
         self.opciones = []
@@ -121,7 +121,7 @@ class Menu:
             opcion.imprimir(screen)
 
 def comenzar_nuevo_juego():
-    pass
+    recibir_peticiones("comenzar")
 
 def mostrar_opciones():
     pass
@@ -131,7 +131,7 @@ def creditos():
 
 def salir_del_programa():
     print (" Gracias por utilizar este programa.")
-    sys.exit(1)
+    sys.exit()
 
 
 if __name__ == '__main__':
