@@ -15,3 +15,6 @@ class Usuario(Jugador):
 
     def comprar(self, lista_de_acciones):
         pass
+
+    def vender(self):
+        pass
