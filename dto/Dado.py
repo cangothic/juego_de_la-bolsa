@@ -16,10 +16,10 @@ class Dado(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.centerx = WIDTH / 2
         self.rect.centery = HEIGHT / 2
-        self.speed = [0.5, -0.5]
 
     def tirar_dado(self): #cambia el varor del dado un entero de 1 a 6
         self.valor=random.randint(1,6)
+        return str(self.valor)
 
     def cambiar_cara(self,nuevaimagen): # cambiar inmagen del dado
         self.image = load_image(nuevaimagen, True)
