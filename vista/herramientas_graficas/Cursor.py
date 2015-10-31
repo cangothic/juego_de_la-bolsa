@@ -10,5 +10,3 @@ class Cursor(pygame.Rect):
         pygame.Rect.__init__(self,0,0,1,1)
     def actualizar(self):
         self.left,self.top=pygame.mouse.get_pos()
-        if(clic(0)):
-            print (self.left,self.top)
