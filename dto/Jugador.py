@@ -20,5 +20,4 @@ class Jugador(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.centerx = WIDTH / 2
         self.rect.centery = HEIGHT / 2
-        self.speed = [0.5, -0.5]
 

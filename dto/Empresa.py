@@ -12,9 +12,6 @@ class Empresa():
         self.cambio_de_mercado(self)
         self.titulos_disponibles = 7
 
-    def vender_acción(self, usuario):
-        pass
-
     def quiebra(self):#calcula si una empresa se quiebra o no
         aleatorio = random.random()
         if (aleatorio <= 1 / 16):

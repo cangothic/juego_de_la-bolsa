@@ -7,4 +7,4 @@ def recibir_peticiones(peticion):
         pregunta=Configuracion_deljuego()
 
     if(peticion=="juego"):
-        iniciar_juego()
+        iniciar_juego(0)

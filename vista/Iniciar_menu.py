@@ -12,10 +12,9 @@ def mostrar_opciones():
     recibir_peticiones("juego")
 
 def creditos():
-    pass
+    recibir_peticiones("creditos")
 
 def salir_del_programa():
-    print (" Gracias por utilizar este programa.")
     sys.exit()
 #fin de procedimientos
 
