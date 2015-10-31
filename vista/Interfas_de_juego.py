@@ -10,6 +10,7 @@ from dto.Dado import *
 from vista.herramientas_graficas.Cursor import *
 from vista.herramientas_graficas.Boton import *
 from dto.Agente_de_bolsa import *
+from dto.Tablero import *
 WIDTH = 1146
 HEIGHT = 815
 pygame.init()
@@ -25,7 +26,8 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
     dado1=Dado("imagenes/dado/1.png") #crea un dado
     dado2=Dado("imagenes/dado/1.png") #crea un dado
     agente=Agente_de_bolsa(fuente)
-
+    tablero=[(880,350),(880,510),(880,650),(770,650),(670,650),(600,650),(500,650),(400,650),(310,650),(220,650),(90,650),(90,510),(90,350),(90,200),(90,90),(220,90),(310,90),(400,90),(500,90),(600,90),(670,90),(770,90),(880,90),(880,200)]
+    posicion=0
 
 
     while True:
@@ -34,12 +36,13 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
                 if cursor.colliderect(boton.rect) and clic(0):
                     dado1.cambiar_cara("imagenes/dado/"+dado1.tirar_dado()+".png")
                     dado2.cambiar_cara("imagenes/dado/"+dado2.tirar_dado()+".png")
+                    posicion+=dado1.valor+dado2.valor
             if evento.type == QUIT: #si hubo un evento quit cerrar la aplicación
                 sys.exit(0)
         screen.blit(fondo, (0, 0)) #imprime el fondo sobre la pantalla
         screen.blit(dado1.image,(650,200)) #imprime el dado sobre la pantalla en la posición 650 200
-        screen.blit(dado2.image,(720,200)) #imprime el dado sobre la pantalla en la posición 720 200
-        screen.blit(jugador1.image,(220,90))#imprime jugador
+        screen.blit(dado2.image,(720,200)) #imprime el dado sobre la pantalla en la posición 720 200}
+        screen.blit(jugador1.image,tablero[posicion%24])#imprime jugador
         cursor.actualizar()
         boton.actualizar(screen,cursor)
         agente.actualizar(screen)
