@@ -1,4 +1,17 @@
 __author__ = 'rocka'
+import pygame
+from pygame.locals import *
+from mannanger.Imagen import *
 class Agente_de_bolsa:
-    def __int__(self):
+    def __init__(self,fuente):
+        self.fuente=fuente
         self.dinero_recaudado=0
+        pygame.sprite.Sprite.__init__(self)
+        self.image = self.fuente.render("Dinero recaudado: ", 1, (0, 0, 0))
+        self.image2 = fuente.render(str(self.dinero_recaudado), 1, (0, 0, 0))
+        self.rect = (402,327)
+
+    def actualizar(self,pantalla):
+        self.image2 = self.fuente.render(str(self.dinero_recaudado), 1, (0, 0, 0))
+        pantalla.blit(self.image,(402,327))
+        pantalla.blit(self.image2,(402,377))
