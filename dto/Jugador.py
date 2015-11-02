@@ -22,3 +22,7 @@ class Jugador(pygame.sprite.Sprite):
         self.rect.centerx = WIDTH / 2
         self.rect.centery = HEIGHT / 2
 
+    def abrir_cartera(self):
+        pass
+
+
