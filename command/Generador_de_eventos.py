@@ -1,9 +1,9 @@
 __author__ = 'brian y carlos'
 import random
-import command
+from mannanger.Algoritmos_de_manejo_de_dinero import *
 def evento(jugador,agente,query):
-    funciones = {"001":command.controlador.transferencia,
-                 "002":command.controlador.comision_de_agente}
+    funciones = {"001":transferencia,
+                 "002":comision_de_agente}
 
     acciones = [{"posicion":6,"id":"001"},
                 {"posicion":18,"id":"002"},
@@ -23,7 +23,8 @@ def evento(jugador,agente,query):
             if len(event)==tamano:
                 if(random.randint(0,2)==1):
                     better = event
-        funciones[better["id"]](jugador,agente)
+        if jugador.posicion == 6 or jugador.posicion==18:
+            funciones[better["id"]](jugador,agente)
 
 def esValida(reglasEvento,query):
     for regla in reglasEvento:
