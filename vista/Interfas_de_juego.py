@@ -23,7 +23,11 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
     pygame.display.set_caption("Juego Accion y bolsa") #le pone un nombre a la ventana
     ficha=random.randint(1,8)#prueba para tener una ficha aleatoria cambiar luego
     cursor=Cursor()
-    boton=Boton("imagenes/botones/azul.png","imagenes/botones/azul2.png")
+    boton_lanzar_dado=Boton("imagenes/botones/lanzar.png","imagenes/botones/lanzar2.png")
+    boton_cartera=Boton("imagenes/botones/cartera.png","imagenes/botones/cartera2.png")
+    boton_mercado=Boton("imagenes/botones/mercado.png","imagenes/botones/mercado2.png")
+    boton4=Boton("imagenes/botones/negocear.png","imagenes/botones/negocear2.png")
+    boton5=Boton("imagenes/botones/vender.png","imagenes/botones/vender2.png")
     #crear jugadores
     jugador1=Jugador("jugador1",10000,"imagenes/fichas/1.png")
     jugador2=Jugador("jugador2",10000,"imagenes/fichas/2.png")
@@ -45,7 +49,7 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
     while True:
         for evento in pygame.event.get(): #buscar en una lista de eventos
             if evento.type==pygame.MOUSEBUTTONDOWN:
-                if cursor.colliderect(boton.rect) and clic(0):
+                if cursor.colliderect(boton_lanzar_dado.rect) and clic(0):
                     #se cambian la imagen de lo dados aleatoriamente conservando el valor en el cual callo
                     dado1.cambiar_cara("imagenes/dado/"+dado1.tirar_dado()+".png")
                     dado2.cambiar_cara("imagenes/dado/"+dado2.tirar_dado()+".png")
@@ -55,6 +59,7 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
                         turno=(turno+1)%8
             if evento.type == QUIT: #si hubo un evento quit cerrar la aplicación
                 sys.exit(0)
+        screen.fill((255,35,1))
         screen.blit(fondo, (0, 0)) #imprime el fondo sobre la pantalla
         screen.blit(dado1.image,(650,200)) #imprime el dado sobre la pantalla en la posición 650 200
         screen.blit(dado2.image,(720,200)) #imprime el dado sobre la pantalla en la posición 720 200
@@ -62,7 +67,11 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
         for jugando in jugadores:
             screen.blit(jugando.image,tablero[jugando.posicion])
         cursor.actualizar()
-        boton.actualizar(screen,cursor) #actualiza la imagen del boton con la posicion del cursor
+        boton_lanzar_dado.actualizar(screen,cursor,(680,300)) #actualiza la imagen del boton con la posicion del cursor
+        boton_cartera.actualizar(screen,cursor,(1060,10))
+        boton_mercado.actualizar(screen,cursor,(1060,200))
+        boton4.actualizar(screen,cursor,(1060,390))
+        boton5.actualizar(screen,cursor,(1060,580))
         agente.actualizar(screen,jugadores[turno].nombre)#imprime el monto del agente y la informacion del jugador en curso
         screen.blit(jugadores[turno].image,(602,377))#imprime la imagen del jugador en curso para que el sepa con que ficha esta jugando
         pygame.display.update()

@@ -8,10 +8,10 @@ class Boton(pygame.sprite.Sprite):
         self.image_seleccion=load_image(imagen2,True)
         self.image = self.image_normal
         self.rect = self.image.get_rect()
-        self.rect.left,self.rect.top=(680,300)
 
-    def actualizar(self,pantalla,cursor):
+    def actualizar(self,pantalla,cursor,cordenadas):
         if cursor.colliderect(self.rect):
             self.image=self.image_seleccion
         else: self.image=self.image_normal
-        pantalla.blit(self.image,(680,300))
+        self.rect.left,self.rect.top=cordenadas
+        pantalla.blit(self.image,cordenadas)
