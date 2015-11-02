@@ -11,7 +11,9 @@ class Agente_de_bolsa:
         self.image2 = fuente.render(str(self.dinero_recaudado), 1, (0, 0, 0))
         self.rect = (402,327)
 
-    def actualizar(self,pantalla):
+    def actualizar(self,pantalla,jugador):
         self.image2 = self.fuente.render(str(self.dinero_recaudado), 1, (0, 0, 0))
+        self.jugador=self.fuente.render(jugador, 1, (0, 0, 0))
         pantalla.blit(self.image,(402,327))
         pantalla.blit(self.image2,(402,377))
+        pantalla.blit(self.jugador,(402,427))
