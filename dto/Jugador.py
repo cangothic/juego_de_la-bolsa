@@ -12,6 +12,7 @@ class Jugador(pygame.sprite.Sprite):
     def __init__(self,nombre,saldo,imagen):
         #logica de jugador
         self.nombre = nombre
+        self.posicion=0
         self.saldo = saldo
         self.titulos = {}
         #logica de la ficha
