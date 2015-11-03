@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$" mnemonic="1" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e60f8985-193c-4661-b673-2df3554acf4f" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\mannanger\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\vista\imagenes\botones\azul.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\vista\imagenes\botones\azul2.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vista/imagenes/tablero_de juego.png" afterPath="$PROJECT_DIR$/vista/imagenes/tablero_de juego.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mannanger/Algoritmos_de_manejo_de_dinero.py" afterPath="$PROJECT_DIR$/mannanger/Algoritmos_de_manejo_de_dinero.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vista/herramientas_graficas/Boton.py" afterPath="$PROJECT_DIR$/vista/herramientas_graficas/Boton.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/command/Generador_de_eventos.py" afterPath="$PROJECT_DIR$/command/Generador_de_eventos.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vista/Interfas_de_juego.py" afterPath="$PROJECT_DIR$/vista/Interfas_de_juego.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dto/Jugador.py" afterPath="$PROJECT_DIR$/dto/Jugador.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/command/controlador.py" afterPath="$PROJECT_DIR$/command/controlador.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dto/Mercado_de_valores.py" afterPath="$PROJECT_DIR$/dto/Mercado_de_valores.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="juego_de_la-bolsa.iws" />
@@ -37,66 +34,8 @@
         <entry file="file://$PROJECT_DIR$/vista/Interfas_de_juego.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-              <folding>
-                <element signature="e#68#81#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Boton.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vista/herramientas_graficas/Boton.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Iniciar_menu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vista/Iniciar_menu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#67#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controlador.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/command/controlador.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#21#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Algoritmos_de_manejo_de_dinero.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mannanger/Algoritmos_de_manejo_de_dinero.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configuracion_del_juego.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vista/Configuracion_del_juego.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#67#88#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -104,11 +43,33 @@
       <file leaf-file-name="Generador_de_eventos.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/command/Generador_de_eventos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46875">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.6640625">
+              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
               <folding>
                 <element signature="e#30#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jugador.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dto/Jugador.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#68#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mercado_de_valores.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dto/Mercado_de_valores.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jugador.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dto/Jugador.py">
+      <file leaf-file-name="Dado.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dto/Dado.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -174,10 +135,8 @@
         <option value="$PROJECT_DIR$/mannanger/Banco.py" />
         <option value="$PROJECT_DIR$/dto/Usuario.py" />
         <option value="$PROJECT_DIR$/mannanger/Imagen.py" />
-        <option value="$PROJECT_DIR$/vista/Configuracion_del_juego.py" />
         <option value="$PROJECT_DIR$/vista/menu/Menu.py" />
         <option value="$PROJECT_DIR$/vista/menu/Opcion.py" />
-        <option value="$PROJECT_DIR$/dto/Mercado_de_valores.py" />
         <option value="$PROJECT_DIR$/dto/Artificial.py" />
         <option value="$PROJECT_DIR$/dto/Dado.py" />
         <option value="$PROJECT_DIR$/dto/Cartera.py" />
@@ -190,11 +149,13 @@
         <option value="$PROJECT_DIR$/mannanger/Generador_de_eventos.py" />
         <option value="$PROJECT_DIR$/dto/Banco.py" />
         <option value="$PROJECT_DIR$/mannanger/Algoritmos_de_manejo_de_dinero.py" />
-        <option value="$PROJECT_DIR$/dto/Jugador.py" />
         <option value="$PROJECT_DIR$/command/controlador.py" />
-        <option value="$PROJECT_DIR$/command/Generador_de_eventos.py" />
         <option value="$PROJECT_DIR$/vista/herramientas_graficas/Boton.py" />
+        <option value="$PROJECT_DIR$/dto/Mercado_de_valores.py" />
+        <option value="$PROJECT_DIR$/vista/Configuracion_del_juego.py" />
+        <option value="$PROJECT_DIR$/dto/Jugador.py" />
         <option value="$PROJECT_DIR$/vista/Interfas_de_juego.py" />
+        <option value="$PROJECT_DIR$/command/Generador_de_eventos.py" />
       </list>
     </option>
   </component>
@@ -203,8 +164,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1929" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -272,24 +232,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vista" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="herramientas_graficas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="juego_de_la-bolsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="juego_de_la-bolsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mannanger" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -324,10 +266,10 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches">
         <subPane />
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,11 +281,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\vista\imagenes" />
+      <recent name="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\dto" />
       <recent name="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\command" />
       <recent name="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\vista" />
       <recent name="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa" />
-      <recent name="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\vista\menu" />
-      <recent name="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\mannanger" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Iniciar_menu">
@@ -381,23 +323,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Jugador" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dto" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="juego_de_la-bolsa" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dto/Jugador.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="pruebadebotones" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -428,6 +353,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="juego_de_la-bolsa" />
       <option name="SCRIPT_NAME" value="C:\Users\rocka\Documents\GitHub\juego_de_la-bolsa\command\Generador_de_eventos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Mercado_de_valores" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dto" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="juego_de_la-bolsa" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dto/Mercado_de_valores.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -593,17 +535,17 @@
       <item index="1" class="java.lang.String" itemvalue="Python.Iniciar_menu" />
       <item index="2" class="java.lang.String" itemvalue="Python.Interfas_de_juego" />
       <item index="3" class="java.lang.String" itemvalue="Python.Configuracion_del_juego" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Jugador" />
-      <item index="5" class="java.lang.String" itemvalue="Python.pruebadebotones" />
-      <item index="6" class="java.lang.String" itemvalue="Python.Generador_de_eventos" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pruebadebotones" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Generador_de_eventos" />
+      <item index="6" class="java.lang.String" itemvalue="Python.Mercado_de_valores" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Interfas_de_juego" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Generador_de_eventos" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Configuracion_del_juego" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pruebadebotones" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Jugador" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Mercado_de_valores" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Interfas_de_juego" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Generador_de_eventos" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Configuracion_del_juego" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pruebadebotones" />
       </list>
     </recent_temporary>
   </component>
@@ -628,10 +570,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="0" width="1929" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16257188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -682,10 +624,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vista/herramientas_graficas/Boton.py">
+    <entry file="file://$PROJECT_DIR$/dto/Dado.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -694,9 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#67#77#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,9 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#67#88#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,7 +682,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#68#85#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -758,9 +692,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#81#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -768,9 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#67#77#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,9 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,9 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#67#88#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,7 +746,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#68#85#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -896,18 +820,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vista/imagenes/mercado_de_valores.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python34/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33286908">
-          <caret line="2085" column="0" selection-start-line="2085" selection-start-column="0" selection-end-line="2085" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mannanger/Imagen.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -924,13 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dto/Dado.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34615386">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -983,13 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dto/Mercado_de_valores.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd_breakpoints.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3515625">
@@ -1004,11 +902,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dto/Jugador.py">
+    <entry file="file://$PROJECT_DIR$/vista/herramientas_graficas/Boton.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vista/Iniciar_menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2567" column="0" selection-start-line="2567" selection-start-column="0" selection-end-line="2567" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vista/imagenes/mercado_de_valores.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vista/Configuracion_del_juego.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33203125">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mannanger/Algoritmos_de_manejo_de_dinero.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33203125">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/command/controlador.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29882812">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1020,66 +957,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vista/Configuracion_del_juego.py">
+    <entry file="file://$PROJECT_DIR$/dto/Dado.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#67#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vista/herramientas_graficas/Boton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vista/Iniciar_menu.py">
+    <entry file="file://$PROJECT_DIR$/dto/Jugador.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#67#77#0" expanded="true" />
+            <element signature="e#68#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mannanger/Algoritmos_de_manejo_de_dinero.py">
+    <entry file="file://$PROJECT_DIR$/dto/Mercado_de_valores.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/command/controlador.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vista/Interfas_de_juego.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="e#68#81#0" expanded="true" />
-          </folding>
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/command/Generador_de_eventos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46875">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.6640625">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
           <folding>
             <element signature="e#30#43#0" expanded="true" />
           </folding>

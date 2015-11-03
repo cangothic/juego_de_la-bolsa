@@ -12,6 +12,7 @@ from vista.herramientas_graficas.Cursor import *
 from vista.herramientas_graficas.Boton import *
 from dto.Agente_de_bolsa import *
 from command.Generador_de_eventos import *
+from dto.Mercado_de_valores import *
 
 WIDTH = 1146
 HEIGHT = 815
@@ -21,7 +22,7 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
     screen = pygame.display.set_mode((WIDTH, HEIGHT)) #crea una ventana con WIDTH pixeles de largo y HEIGHT de alto
     fondo = pygame.image.load("imagenes/tablero_de juego.png").convert() #carga la imagen de fondo
     pygame.display.set_caption("Juego Accion y bolsa") #le pone un nombre a la ventana
-    ficha=random.randint(1,8)#prueba para tener una ficha aleatoria cambiar luego
+    mercado=Mercado_de_valores("imagenes/mercado_de_valores.png")
     cursor=Cursor()
     boton_lanzar_dado=Boton("imagenes/botones/lanzar.png","imagenes/botones/lanzar2.png")
     boton_cartera=Boton("imagenes/botones/cartera.png","imagenes/botones/cartera2.png")
@@ -54,9 +55,13 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
                     dado1.cambiar_cara("imagenes/dado/"+dado1.tirar_dado()+".png")
                     dado2.cambiar_cara("imagenes/dado/"+dado2.tirar_dado()+".png")
                     jugadores[turno].posicion=(jugadores[turno].posicion+dado1.valor+dado2.valor)%24
-                    generar_query(jugadores[turno],agente) #genera una consulta e investiga que se puede hacer
+                    generar_query(jugadores[turno],agente,mercado) #genera una consulta e investiga que se puede hacer
                     if not ((dado1.valor == dado2.valor) or (dado1.valor == 5 and dado2.valor==6) or (dado1.valor == 6 and dado2.valor==5)):
                         turno=(turno+1)%8
+                if cursor.colliderect(boton_mercado.rect) and clic(0):
+                    mercado.crear_ventana()
+                if cursor.colliderect(boton_cartera.rect) and clic(0):
+                    jugadores[turno].abrir_cartera()
             if evento.type == QUIT: #si hubo un evento quit cerrar la aplicación
                 sys.exit(0)
         screen.fill((255,35,1))

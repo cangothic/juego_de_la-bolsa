@@ -4,6 +4,7 @@
 __author__ = 'rocka'
 import pygame,sys
 from mannanger.Imagen import *
+from tkinter import *
 
 WIDTH=225
 HEIGHT=250
@@ -23,6 +24,13 @@ class Jugador(pygame.sprite.Sprite):
         self.rect.centery = HEIGHT / 2
 
     def abrir_cartera(self):
-        pass
+        self.ventana=Tk()
+        self.ventana.geometry("300x300+0+0")
+        self.ventana.title("cartera")
+        self.etiqueta_nombre= Label(self.ventana, text="nombre: "+self.nombre)
+        self.etiqueta_nombre.pack()
+        self.etiqueta_saldo = Label(self.ventana, text="saldo: "+str(self.saldo))
+        self.etiqueta_saldo.pack() #posiciona el label
+        self.ventana.mainloop()# actualiza la ventana
 
 
