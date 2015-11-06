@@ -30,15 +30,11 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
     boton4=Boton("imagenes/botones/negocear.png","imagenes/botones/negocear2.png")
     boton5=Boton("imagenes/botones/vender.png","imagenes/botones/vender2.png")
     #crear jugadores
-    jugador1=Jugador("jugador1",10000,"imagenes/fichas/1.png")
-    jugador2=Jugador("jugador2",10000,"imagenes/fichas/2.png")
-    jugador3=Jugador("jugador3",10000,"imagenes/fichas/3.png")
-    jugador4=Jugador("jugador4",10000,"imagenes/fichas/4.png")
-    jugador5=Jugador("jugador5",10000,"imagenes/fichas/5.png")
-    jugador6=Jugador("jugador6",10000,"imagenes/fichas/6.png")
-    jugador7=Jugador("jugador7",10000,"imagenes/fichas/7.png")
-    jugador8=Jugador("jugador8",10000,"imagenes/fichas/8.png")
-    jugadores=[jugador1,jugador2,jugador3,jugador4,jugador5,jugador6,jugador7,jugador8]
+    jugadores=[]
+
+    for i in range(numero_jugadores):
+        jugadores.append(Jugador("jugador"+str(i+1),10000,"imagenes/fichas/"+str(i+1)+".png"))
+
     dado1=Dado("imagenes/dado/1.png") #crea un dado
     dado2=Dado("imagenes/dado/1.png") #crea un dado
     agente=Agente_de_bolsa(fuente)
@@ -57,7 +53,7 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
                     jugadores[turno].posicion=(jugadores[turno].posicion+dado1.valor+dado2.valor)%24
                     generar_query(jugadores[turno],agente,mercado) #genera una consulta e investiga que se puede hacer
                     if not ((dado1.valor == dado2.valor) or (dado1.valor == 5 and dado2.valor==6) or (dado1.valor == 6 and dado2.valor==5)):
-                        turno=(turno+1)%8
+                        turno=(turno+1)%numero_jugadores
                 if cursor.colliderect(boton_mercado.rect) and clic(0):
                     mercado.crear_ventana()
                 if cursor.colliderect(boton_cartera.rect) and clic(0):
@@ -77,7 +73,7 @@ def iniciar_juego(numero_jugadores):#inicia la ventana del juego
         boton_mercado.actualizar(screen,cursor,(1060,200))
         boton4.actualizar(screen,cursor,(1060,390))
         boton5.actualizar(screen,cursor,(1060,580))
-        agente.actualizar(screen,jugadores[turno].nombre)#imprime el monto del agente y la informacion del jugador en curso
-        screen.blit(jugadores[turno].image,(602,377))#imprime la imagen del jugador en curso para que el sepa con que ficha esta jugando
+        agente.actualizar(screen,jugadores[turno])#imprime el monto del agente y la informacion del jugador en curso
+        screen.blit(jugadores[turno].image,(602,370))#imprime la imagen del jugador en curso para que el sepa con que ficha esta jugando
         pygame.display.update()
         pygame.display.flip() # actualiza ventana
