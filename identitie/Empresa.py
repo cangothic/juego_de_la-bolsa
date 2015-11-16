@@ -7,7 +7,6 @@ class Empresa():
         self.limite_inferior = limite_inferior
         self.limite_superior= limite_superior
         self.cambio_de_mercado()
-        self.titulos_disponibles = 7
 
     def quiebra(self):#calcula si una empresa se quiebra o no
         aleatorio = random.random()
@@ -17,8 +16,8 @@ class Empresa():
             return False
 
     def cambio_de_mercado(self):# cambia aleatoriamente el mercado de la ermpresa
-        self.quebrado=self.quiebra()
-        if (self.quebrado): #calcula el precio de la empresa quebrada de 50 en 50
+        self.quebrada=self.quiebra()
+        if (self.quebrada): #calcula el precio de la empresa quebrada de 50 en 50
             valor = int(self.limite_inferior * random.uniform(0.3, 0.6))
             sesenta=self.limite_inferior*0.6
             if(valor%50!=0):

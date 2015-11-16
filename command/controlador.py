@@ -5,5 +5,3 @@ from vista.Configuracion_del_juego import *
 def recibir_peticiones(peticion):
     if(peticion=="comenzar"):
         pregunta=Configuracion_deljuego()
-    if(peticion=="juego"):
-        iniciar_juego(2)

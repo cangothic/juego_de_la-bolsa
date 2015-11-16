@@ -8,9 +8,6 @@ from vista.menu.Menu import *
 def comenzar_nuevo_juego():
     recibir_peticiones("comenzar")
 
-def mostrar_opciones():
-    recibir_peticiones("juego")
-
 def creditos():
     recibir_peticiones("creditos")
 
@@ -23,7 +20,6 @@ if __name__ == '__main__':
     #opciones y sus funciones a realizar
     opciones = [
         ("Jugar", comenzar_nuevo_juego),
-        ("Opciones", mostrar_opciones),
         ("Creditos", creditos),
         ("Salir", salir_del_programa)
         ]
