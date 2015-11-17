@@ -47,6 +47,7 @@ def iniciar_juego(numero_jugadores,nombre_de_jugadores,minutos):#inicia la venta
     boton5=Boton("imagenes/botones/vender.png","imagenes/botones/vender2.png")
     #crear jugadores
     jugadores=[]
+    tiempo_inicio=pygame.time.get_ticks()
 
     for i in range(numero_jugadores):
         jugadores.append(Jugador(nombre_de_jugadores[i],10000,"imagenes/fichas/"+str(i+1)+".png"))
@@ -63,6 +64,7 @@ def iniciar_juego(numero_jugadores,nombre_de_jugadores,minutos):#inicia la venta
     hilo.start()'''
     pygame.FULLSCREEN
     #se pinta el juego
+    tiempo=pygame.time.Clock()
     while True:
         for evento in pygame.event.get(): #buscar en una lista de eventos
             if evento.type==pygame.MOUSEBUTTONDOWN:
@@ -111,7 +113,7 @@ def iniciar_juego(numero_jugadores,nombre_de_jugadores,minutos):#inicia la venta
         screen.blit(fondo, (0, 0)) #imprime el fondo sobre la pantalla
         screen.blit(dado1.image,(650,200)) #imprime el dado sobre la pantalla en la posición 650 200
         screen.blit(dado2.image,(720,200)) #imprime el dado sobre la pantalla en la posición 720 200
-        segundos=int(pygame.time.get_ticks()/1000)
+        segundos=int((pygame.time.get_ticks()-tiempo_inicio)/1000)
         cronometro=fuente2.render(str(int(segundos/3600)%12)+":"+str((int(segundos/60))%60)+":"+str(segundos%60),0,(0,0,0))
         screen.blit(cronometro,(450,527))
         #imprimir jugadores

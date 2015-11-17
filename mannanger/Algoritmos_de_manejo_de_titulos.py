@@ -99,7 +99,7 @@ def negociar(recibida,jugador,negociante,mercado_de_valores,clave):
         pedir_cantidad.pack()
         boton=Button(ventana, text="enviar",command=lambda:validar_negociacion(ventana,jugador,negociante,mercado_de_valores,clave,comision,pedir_cantidad.get()))
         boton.pack()
-
+#recoje las titulaciones de todos los jugadores
 def recoger_titulaciones(jugadores,mercado_de_valores):
     for empresa in mercado_de_valores.titulos:
         for jugador in jugadores:
